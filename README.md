@@ -12,3 +12,10 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+4、VMware虚拟机Mac OS X无法调整扩展硬盘大小，更新xcode时出现磁盘空间不足。
+MacOSX有一个diskutil命令（在终端里面使用）。而diskutil有一个resizeVolume命令。
+1）打开终端，输入diskutil list
+2）.从显示的列表中找到你需要扩展的分区，如上图。我的磁盘有107.4G，但系统分区为42.1GB。（分区的ID一般为diskXsX，我的ID是disk0s2）；
+3）.然后输入 diskutil resizeVolume disk0s2 100GB，其中disk0s2为对应分区的ID，100GB为目标大小（这里的目标大小不能超过这个磁盘的总额）；回车，等待完成就可以使用了。
+from https://www.cnblogs.com/atree/p/MacOSX_diskutil_xcode.html
