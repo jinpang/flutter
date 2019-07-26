@@ -19,3 +19,10 @@ MacOSX有一个diskutil命令（在终端里面使用）。而diskutil有一个r
 2）.从显示的列表中找到你需要扩展的分区，如上图。我的磁盘有107.4G，但系统分区为42.1GB。（分区的ID一般为diskXsX，我的ID是disk0s2）；
 3）.然后输入 diskutil resizeVolume disk0s2 100GB，其中disk0s2为对应分区的ID，100GB为目标大小（这里的目标大小不能超过这个磁盘的总额）；回车，等待完成就可以使用了。
 from https://www.cnblogs.com/atree/p/MacOSX_diskutil_xcode.html
+
+5、flutter 打包apk之后，安装在手机上无法访问网络：
+android/src/main/AndroidManifest.xml使用权限申请配置放到这里 打包再次安装 就可以访问网路了，权限如下：
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
