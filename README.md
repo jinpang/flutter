@@ -26,3 +26,5 @@ android/src/main/AndroidManifest.xml使用权限申请配置放到这里 打包�
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+6、ios端面，flutter与原生交互时，会出现x86_64 找不到的，百度后为对自己的没用，最后终极解决方案是，拿一个可以跑的flutter项目，把项目的ios目录删除，再使用新的可能跑的ios覆盖过来，再把代码移过来就可以了使用。
