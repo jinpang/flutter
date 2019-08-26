@@ -29,7 +29,7 @@ android/src/main/AndroidManifest.xml使用权限申请配置放到这里 打包�
 
 6、ios端面，flutter与原生交互时，会出现x86_64 找不到的，百度后为对自己的没用，最后终极解决方案是，拿一个可以跑的flutter项目，把项目的ios目录删除，再使用新的可能跑的ios覆盖过来，再把代码移过来就可以了使用。
 
-7、升级Android Studio 3.5遇到一些坑：flutter、dart插件不兼容，需要手动到 https://plugins.jetbrains.com/androidstudio 下载对应版本才能兼容。版本具体如下：
+7、升级Android Studio 3.5遇到一些坑：flutter、dart插件不兼容，需要手动升级，到 https://plugins.jetbrains.com/androidstudio 官网下载对应版本才能兼容。版本具体如下：
 [√] Flutter (Channel stable, v1.7.8+hotfix.4, on Microsoft Windows [Version 10.0.17134.320], locale zh-CN)
     • Flutter version 1.7.8+hotfix.4 at C:\flutter
     • Framework revision 20e59316b8 (6 weeks ago), 2019-07-18 20:04:33 -0700
