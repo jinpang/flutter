@@ -46,5 +46,5 @@ android/src/main/AndroidManifest.xml使用权限申请配置放到这里 打包�
 [√] Android Studio (version 3.5)
     • Android Studio at C:\Program Files\Android\Android Studio
     • Flutter plugin version 38.2.3
-    • Dart plugin version 191.8405
+    • Dart plugin version 191.8423
     • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
