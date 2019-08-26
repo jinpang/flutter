@@ -28,3 +28,23 @@ android/src/main/AndroidManifest.xml使用权限申请配置放到这里 打包�
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 6、ios端面，flutter与原生交互时，会出现x86_64 找不到的，百度后为对自己的没用，最后终极解决方案是，拿一个可以跑的flutter项目，把项目的ios目录删除，再使用新的可能跑的ios覆盖过来，再把代码移过来就可以了使用。
+
+7、升级Android Studio 3.5遇到一些坑：flutter、dart插件不兼容，需要手动到 https://plugins.jetbrains.com/androidstudio 下载对应版本才能兼容。版本具体如下：
+[√] Flutter (Channel stable, v1.7.8+hotfix.4, on Microsoft Windows [Version 10.0.17134.320], locale zh-CN)
+    • Flutter version 1.7.8+hotfix.4 at C:\flutter
+    • Framework revision 20e59316b8 (6 weeks ago), 2019-07-18 20:04:33 -0700
+    • Engine revision fee001c93f
+    • Dart version 2.4.0
+[√] Android toolchain - develop for Android devices (Android SDK version 29.0.1)
+    • Android SDK at C:\Users\jinpang\AppData\Local\Android\Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.1
+    • ANDROID_HOME = C:\Users\jinpang\AppData\Local\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+    • All Android licenses accepted.
+[√] Android Studio (version 3.5)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 38.2.3
+    • Dart plugin version 191.8405
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
